@@ -1,13 +1,14 @@
 import React from 'react'
+import { BrowserRouter } from 'react-router-dom'
 import MarketingApp from './components/MarketingApp'
+import Header from './components/Header'
 
 function App() {
   return (
-    <div>
-      <h1>Hi There</h1>
-      <br/>
+    <BrowserRouter>
+      <Header />
       <MarketingApp />
-    </div>
+    </BrowserRouter>
   )
 }
 
